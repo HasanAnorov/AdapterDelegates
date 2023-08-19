@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.cardview.widget.CardView
     android:id="@+id/postItem"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -28,7 +27,7 @@
             android:layout_marginEnd="16dp"
             app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium"
             android:layout_width="match_parent"
-            android:layout_height="240dp"/>
+            android:layout_height="40dp"/>
 
         <com.google.android.material.divider.MaterialDivider
             android:id="@+id/divider"
@@ -39,8 +38,9 @@
             app:layout_constraintBottom_toTopOf="@id/post_text"/>
 
         <TextView
-            android:id="@+id/post_text"
+            android:id="@+id/ad_text"
             android:layout_width="0dp"
+            android:text="This is ad!"
             android:textColor="@color/black"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"

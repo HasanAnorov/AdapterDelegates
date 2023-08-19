@@ -5,24 +5,24 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.hasan.adapterdelegates.databinding.ActivityMainBinding
+import com.hasan.adapterdelegates.databinding.ActivityPostsWithAdsBinding
 import com.hasan.adapterdelegates.model.PostModel
 import com.hasan.adapterdelegates.model.PostType
 
-class MainActivity : AppCompatActivity() {
+class PostsWithAdsActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityPostsWithAdsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityPostsWithAdsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val fakeData = arrayOf(
-            PostModel(PostType.POST,R.drawable.ic_launcher_foreground, "Test text 2"),
-            PostModel(PostType.POST,R.drawable.ic_launcher_foreground, "Test text 1"),
-            PostModel(PostType.POST,R.drawable.ic_launcher_foreground, "Test text 3"),
-            PostModel(PostType.POST,R.drawable.ic_launcher_foreground, "Test text 4"),
+            PostModel(PostType.AD,R.drawable.ic_launcher_foreground, "Test text 1"),
+            PostModel(PostType.AD,R.drawable.ic_launcher_foreground, "Test text 2"),
+            PostModel(PostType.AD,R.drawable.ic_launcher_foreground, "Test text 3"),
+            PostModel(PostType.AD,R.drawable.ic_launcher_foreground, "Test text 4"),
             PostModel(PostType.POST,R.drawable.ic_launcher_foreground, "Test text 5"),
             PostModel(PostType.POST,R.drawable.ic_launcher_foreground, "Test text 6"),
             PostModel(PostType.POST,R.drawable.ic_launcher_foreground, "Test text 7"),
@@ -36,12 +36,15 @@ class MainActivity : AppCompatActivity() {
             PostModel(PostType.POST,R.drawable.ic_launcher_foreground, "Test text 15")
         )
 
-        val postAdapter = PostAdapter(
+        val postAdapter = PostsWithAdsAdapter(
             dataSet = fakeData,
-            itemClick = {
+            onAdClicked = {
                 Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
             },
-            premiumItemClick = {
+            onItemClick = {
+                Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
+            },
+            onPremiumItemClick = {
                 Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
             }
         )
