@@ -1,4 +1,4 @@
-package com.hasan.adapterdelegates
+package com.hasan.adapterdelegates.composition_adapter_example
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.imageview.ShapeableImageView
+import com.hasan.adapterdelegates.R
 import com.hasan.adapterdelegates.model.PostModel
 
 
@@ -30,8 +31,8 @@ class PostAdapterDelegate(
 }
 
 class PostViewHolder(postView: View): RecyclerView.ViewHolder(postView){
-    private val postText: TextView = postView.findViewById(R.id.post_text)
-    private val postImage: ShapeableImageView = postView.findViewById(R.id.post_image)
+    private val postText: TextView = postView.findViewById(R.id.premium_text)
+    private val postImage: ShapeableImageView = postView.findViewById(R.id.premium_image)
 
     fun onBind(post: PostModel, onPostItemClick: (String) -> Unit){
         postText.text = post.text

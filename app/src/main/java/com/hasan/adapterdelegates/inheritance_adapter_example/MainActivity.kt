@@ -1,10 +1,7 @@
-package com.hasan.adapterdelegates
+package com.hasan.adapterdelegates.inheritance_adapter_example
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.hasan.adapterdelegates.databinding.ActivityMainBinding
 import com.hasan.adapterdelegates.model.PostModel
 

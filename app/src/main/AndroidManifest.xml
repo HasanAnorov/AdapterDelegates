@@ -12,20 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdapterDelegates"
         tools:targetApi="31">
+
         <activity
-            android:name=".PostsWithAdsActivity"
-            android:exported="true" >
+            android:name=".adapter_delegates_lib_example.AdapterDelegateLibActivity"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
 
         </activity>
+
+        <activity
+            android:name=".composition_adapter_example.PostsWithAdsActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".inheritance_adapter_example.MainActivity"
+            android:exported="true"/>
+
     </application>
 
 </manifest>

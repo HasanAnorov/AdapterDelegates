@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.cardview.widget.CardView
-    android:id="@+id/postItem"
+    android:id="@+id/banner_item"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -16,7 +17,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/ad_image"
+            android:id="@+id/banner_image"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -27,18 +28,18 @@
             android:layout_marginEnd="16dp"
             app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium"
             android:layout_width="match_parent"
-            android:layout_height="40dp"/>
+            android:layout_height="60dp"/>
 
         <com.google.android.material.divider.MaterialDivider
             android:id="@+id/divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/ad_image"
-            app:layout_constraintBottom_toTopOf="@id/ad_text"/>
+            app:layout_constraintTop_toBottomOf="@id/banner_image"
+            app:layout_constraintBottom_toTopOf="@id/banner_text"/>
 
         <TextView
-            android:id="@+id/ad_text"
+            android:id="@+id/banner_text"
             android:layout_width="0dp"
             android:text="This is ad!"
             android:textColor="@color/black"

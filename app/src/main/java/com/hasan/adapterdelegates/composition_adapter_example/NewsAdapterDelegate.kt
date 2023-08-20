@@ -1,10 +1,11 @@
-package com.hasan.adapterdelegates
+package com.hasan.adapterdelegates.composition_adapter_example
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.hasan.adapterdelegates.R
 import com.hasan.adapterdelegates.model.PostModel
 
 class NewsAdapterDelegate(val viewType: Int, private val onNewsClicked: (String) -> Unit) {

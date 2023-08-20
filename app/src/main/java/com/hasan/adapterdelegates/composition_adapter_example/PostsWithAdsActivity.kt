@@ -1,13 +1,13 @@
-package com.hasan.adapterdelegates
+package com.hasan.adapterdelegates.composition_adapter_example
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.hasan.adapterdelegates.R
 import com.hasan.adapterdelegates.databinding.ActivityPostsWithAdsBinding
 import com.hasan.adapterdelegates.model.PostModel
-import com.hasan.adapterdelegates.model.PostType
 
 class PostsWithAdsActivity : AppCompatActivity() {
 

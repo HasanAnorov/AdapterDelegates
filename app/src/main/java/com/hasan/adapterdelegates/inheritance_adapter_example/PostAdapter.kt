@@ -1,13 +1,4 @@
-package com.hasan.adapterdelegates
-
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.imageview.ShapeableImageView
-import com.hasan.adapterdelegates.model.PostModel
-import com.hasan.adapterdelegates.model.PostType
+package com.hasan.adapterdelegates.inheritance_adapter_example
 
 //open class PostAdapter(
 //    private val dataSet: Array<PostModel>,

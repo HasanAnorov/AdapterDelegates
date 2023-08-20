@@ -1,4 +1,4 @@
-package com.hasan.adapterdelegates
+package com.hasan.adapterdelegates.composition_adapter_example
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
