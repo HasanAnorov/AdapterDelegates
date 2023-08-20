@@ -1,7 +1,7 @@
 package com.hasan.adapterdelegates.model
 
 data class PostModel(
-    val type: PostType,
+    val type: Int,
     val image: Int,
     val text: String
 )
